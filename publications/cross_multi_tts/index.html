@@ -14,16 +14,16 @@
 
     <!-- <div><b>Paper:</b> <a href="https://arxiv.org/abs/1703.10135">arXiv</a> <a href="http://www.interspeech2017.org/program/technical-program/">Interspeech 2017</a></div> -->
     <!-- <div><b>Authors:</b> Yuxuan Wang, RJ Skerry-Ryan, Daisy Stanton, Yonghui Wu, Ron J. Weiss, Navdeep Jaitly, Zongheng Yang, Ying Xiao, Zhifeng Chen, Samy Bengio, Quoc Le, Yannis Agiomyrgiannakis, Rob Clark, Rif A. Saurous</div> -->
-    <div><b>Abstract:</b> Neural network-based model for text-to-speech (TTS) synthesis has made significant progress
-         in recent years. In this paper, we present a cross-lingual, multi-speaker neural end-to-end TTS framework 
-         which can model speaker's characteristic and synthesize speech in different languages. We implement 
-         the model by introducing a separately trained neural speaker embedding network 
-         which can represent the latent structure of different speakers and languages. 
-         We train the speech synthesis network bilingually and prove the possibility of 
-         synthesizing Chinese speaker's English speech and vice versa. We explore different methods 
-         to fit a new speaker using only a few speech samples. The experimental results show that, 
-         with only several minutes of audio from a new speaker, the proposed model can synthesize speech bilingually 
-         and results decent naturalness and similarity for both languages.</div>
+    <div><b>Abstract:</b> Neural network-based model for text-to-speech (TTS) synthesis has made significant progress in recent years. 
+      In this paper, we present a cross-lingual, multi-speaker neural end-to-end TTS framework 
+      which can model speaker characteristics and synthesize speech in different languages. 
+      We implement the model by introducing a separately trained neural speaker embedding network, 
+      which can represent the latent structure of different speakers and language pronunciations. 
+      We train the speech synthesis network bilingually and prove the possibility of 
+      synthesizing Chinese speaker's English speech and vice versa. We explore different methods 
+      to fit a new speaker using only a few speech samples. The experimental results show that, 
+      with only several minutes of audio from a new speaker, the proposed model can synthesize speech bilingually 
+      and acquire decent naturalness and similarity for both languages.</div>
 
     <!-- <div><br/>All of the below phrases are unseen by Tacotron during training. <a href="../../index.html">Click here for more from the Tacotron team.</a></div> -->
 
@@ -49,7 +49,6 @@
             <td colspan="4"><span><b>Synthesized:</b></span></td>
           </tr>
           <tr>
-            <!-- <td colspan="4"><span>0: Take a look at these pages for crooked creek drive.</span></td> -->
             <td><span>0: There was nothing on the rock.</span></td>
             <td><span>0: The boat was fantanstic.</span></td>
             <td><span>0: Anyway, no one saw her like that.</span></td>
@@ -110,7 +109,6 @@
             <td colspan="5"><span><b>Synthesized:</b></span></td>
           </tr>
           <tr>
-            <!-- <td colspan="4"><span>0: Take a look at these pages for crooked creek drive.</span></td> -->
             <td><span>0: I came for information more out of curiosity than anything else.</span></td>
             <td><span>0: She turned in at the hotel.</span></td>
             <td><span>0: By is the town of a mess.</span></td>
@@ -143,7 +141,7 @@
             <td><span>2: 你真的是一个talent.</span></td>
             <td><span>2: Let me see这太美了</span></td>
             <td><span>2: 我喜欢China.</span></td>
-            <td><span>2: You raise me up太好听了.</span></td>
+            <td><span>2: You raise me up太好听了</span></td>
           </tr>
           <tr>
             <td><audio controls=""><source src="demos/clb/clb_62.wav" type="audio/wav"></audio></td>
@@ -155,33 +153,31 @@
         </tbody>
       </table>
 
-      <div>
-        <h3>Fictitious Speakers</h3>
-        <table>
-          <tbody>
-            <tr>
-              <td colspan="3"><span><b>Random speaker embeddings, this is just to check the robustness of the model:</b></span></td>
-            </tr>
-            <tr>
-              <!-- <td colspan="4"><span>0: Take a look at these pages for crooked creek drive.</span></td> -->
-              <td><span>0: There was a change now.</span></td>
-            </tr>
-            <tr>
-              <td><audio controls=""><source src="demos/fri/clb_53.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td><span>1: 让您对保险更加了解</span></td>
-            </tr>
-            <tr>
-              <td><audio controls=""><source src="demos/fri/fri_42.wav" type="audio/wav"></audio></td>
-            </tr>
-            <tr>
-              <td><span>2: You raise me up太好听了</span></td>
-            </tr>
-            <tr>
-              <td><audio controls=""><source src="demos/fri/fri_62.wav" type="audio/wav"></audio></td>
-            </tr>
-          </tbody>
-        </table>
+      <h3>Fictitious Speakers</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="3"><span><b>Random speaker embeddings, this is just to check the robustness of the model.</b></span></td>
+          </tr>
+          <tr>
+            <td><span>0: There was a change now.</span></td>
+          </tr>
+          <tr>
+            <td><audio controls=""><source src="demos/fri/clb_53.wav" type="audio/wav"></audio></td>
+          </tr>
+          <tr>
+            <td><span>1: 让您对保险更加了解</span></td>
+          </tr>
+          <tr>
+            <td><audio controls=""><source src="demos/fri/fri_42.wav" type="audio/wav"></audio></td>
+          </tr>
+          <tr>
+            <td><span>2: You raise me up太好听了</span></td>
+          </tr>
+          <tr>
+            <td><audio controls=""><source src="demos/fri/fri_62.wav" type="audio/wav"></audio></td>
+          </tr>
+        </tbody>
+      </table>
   </body>
 </html>
