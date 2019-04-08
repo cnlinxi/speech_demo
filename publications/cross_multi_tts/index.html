@@ -1,183 +1,234 @@
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Audio samples of "Cross-lingual, Multi-speaker Text-To-Speech Synthesis Using Neural Speaker Embedding"</title>
-    <link rel="stylesheet" type="text/css" href="../../stylesheet.css"/>
-    <!-- <link rel="shortcut icon" href="../../images/taco.png"> -->
-  </head>
-  <body>
-    <article>
-      <header>
-        <h1>Audio samples of "Cross-lingual, Multi-speaker Text-To-Speech Synthesis Using Neural Speaker Embedding"</h1>
-      </header>
-    </article>
 
-    <!-- <div><b>Paper:</b> <a href="https://arxiv.org/abs/1703.10135">arXiv</a> <a href="http://www.interspeech2017.org/program/technical-program/">Interspeech 2017</a></div> -->
-    <!-- <div><b>Authors:</b> Yuxuan Wang, RJ Skerry-Ryan, Daisy Stanton, Yonghui Wu, Ron J. Weiss, Navdeep Jaitly, Zongheng Yang, Ying Xiao, Zhifeng Chen, Samy Bengio, Quoc Le, Yannis Agiomyrgiannakis, Rob Clark, Rif A. Saurous</div> -->
-    <div><b>Abstract:</b> Neural network-based model for text-to-speech (TTS) synthesis has made significant progress in recent years. 
-      In this paper, we present a cross-lingual, multi-speaker neural end-to-end TTS framework 
-      which can model speaker characteristics and synthesize speech in different languages. 
-      We implement the model by introducing a separately trained neural speaker embedding network, 
-      which can represent the latent structure of different speakers and language pronunciations. 
-      We train the speech synthesis network bilingually and prove the possibility of 
-      synthesizing Chinese speaker's English speech and vice versa. We explore different methods 
-      to fit a new speaker using only a few speech samples. The experimental results show that, 
-      with only several minutes of audio from a new speaker, the proposed model can synthesize speech bilingually 
-      and acquire decent naturalness and similarity for both languages.</div>
+<head>
+  <meta charset="UTF-8">
+  <title>Audio samples of "Cross-lingual, Multi-speaker Text-To-Speech Synthesis Using Neural Speaker Embedding"</title>
+  <link rel="stylesheet" type="text/css" href="../../stylesheet.css" />
+  <!-- <link rel="shortcut icon" href="../../images/taco.png"> -->
+</head>
 
-    <!-- <div><br/>All of the below phrases are unseen by Tacotron during training. <a href="../../index.html">Click here for more from the Tacotron team.</a></div> -->
+<body>
+  <article>
+    <header>
+      <h1>Audio samples of "Cross-lingual, Multi-speaker Text-To-Speech Synthesis Using Neural Speaker Embedding"</h1>
+    </header>
+  </article>
 
-    <div>
-      <h3>Seen Speakers</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>VCTK p225(English, Female)</th><th>VCTK p226(English, Male)</th><th>ST P00001I(Chinese, Female)</th><th>ST P00001A(Chinese, Male)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colspan="4"><span><b>Reference:</b></td></span>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/raw_audio/p225/p225_355.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/raw_audio/p226/p226_360.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/raw_audio/P00001I/P00001I_0110.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/raw_audio/P00001A/P00001A_0116.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td colspan="4"><span><b>Synthesized:</b></span></td>
-          </tr>
-          <tr>
-            <td><span>0: There was nothing on the rock.</span></td>
-            <td><span>0: The boat was fantanstic.</span></td>
-            <td><span>0: Anyway, no one saw her like that.</span></td>
-            <td><span>0: I was the only one who remained sitting.</span></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/p225/p225_57.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/p226/p226_39.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/P00001I/P00001I_59.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/P00001A/P00001A_56.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td><span>1: 今日第一次去网吧玩英雄联盟</span></td>
-            <td><span>1: 形容火烧云形状的词语</span></td>
-            <td><span>1: 你辞职了再去银行可以吗</span></td>
-            <td><span>1: 我就怕辞职了去不了云南</span></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/p225/p225_5.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/p226/p226_63.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/P00001I/P00001I_8.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/P00001A/P00001A_60.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td><span>2: 我喜欢China.</span></td>
-            <td><span>2: Let me see这太美了</span></td>
-            <td><span>2: You raise me up太好听了</span></td>
-            <td><span>2: 我喜欢China.</span></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/p225/p225_60.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/p226/p260_00027.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/P00001I/P00001I_62.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/P00001A/P00001A_60.wav" type="audio/wav"></audio></td>
-          </tr>
-        </tbody>
-      </table>
+  <!-- <div><b>Paper:</b> <a href="https://arxiv.org/abs/1703.10135">arXiv</a> <a href="http://www.interspeech2017.org/program/technical-program/">Interspeech 2017</a></div> -->
+  <!-- <div><b>Authors:</b> Yuxuan Wang, RJ Skerry-Ryan, Daisy Stanton, Yonghui Wu, Ron J. Weiss, Navdeep Jaitly, Zongheng Yang, Ying Xiao, Zhifeng Chen, Samy Bengio, Quoc Le, Yannis Agiomyrgiannakis, Rob Clark, Rif A. Saurous</div> -->
+  <div><b>Abstract:</b> Neural network-based model for text-to-speech (TTS) synthesis has made significant progress in
+    recent years.
+    In this paper, we present a cross-lingual, multi-speaker neural end-to-end TTS framework
+    which can model speaker characteristics and synthesize speech in different languages.
+    We implement the model by introducing a separately trained neural speaker embedding network,
+    which can represent the latent structure of different speakers and language pronunciations.
+    We train the speech synthesis network bilingually and prove the possibility of
+    synthesizing Chinese speaker's English speech and vice versa. We explore different methods
+    to fit a new speaker using only a few speech samples. The experimental results show that,
+    with only several minutes of audio from a new speaker, the proposed model can synthesize speech bilingually
+    and acquire decent naturalness and similarity for both languages.</div>
 
-      <h3>Unseen Speakers</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>CMU clb(English, Female)</th><th>CMU aew(English, Male)</th><th>CMU ahw(English, Male)</th><th>internal Chanxian(Chinese, Female)</th><th>internal Male-golden(Chinese, Male)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colspan="5"><span><b>Reference:</b></td></span>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/raw_audio/clb/clb_b0484.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/raw_audio/aew/aew_b0454.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/raw_audio/ahw/ahw_a0552.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/raw_audio/chanxian/chanxian_001853.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/raw_audio/mg/mg_001804.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td colspan="5"><span><b>Synthesized:</b></span></td>
-          </tr>
-          <tr>
-            <td><span>0: I came for information more out of curiosity than anything else.</span></td>
-            <td><span>0: She turned in at the hotel.</span></td>
-            <td><span>0: By is the town of a mess.</span></td>
-            <td><span>0: I was the only one who remained sitting.</span></td>
-            <td><span>0: The boat was fantanstic.</span></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/clb/clb_58.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/aew/aew_55.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/ahw/ahw_56.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/chanxian/chanxian_25.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/mg/mg_39.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td><span>1: 死亡人数均与去年同期持平</span></td>
-            <td><span>1: 你辞职了再去银行可以吗</span></td>
-            <td><span>1: 我抑制不住内心的激动和感慨</span></td>
-            <td><span>1: 黄龙的雪好大啊</span></td>
-            <td><span>1: 我倒是不怀念读书的日子</span></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/clb/clb_18.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/aew/aew_8.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/ahw/ahw_49.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/chanxian/chanxian_6.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/mg/mg_4.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td><span>2: You raise me up太好听了</span></td>
-            <td><span>2: 你真的是一个talent.</span></td>
-            <td><span>2: Let me see这太美了</span></td>
-            <td><span>2: 我喜欢China.</span></td>
-            <td><span>2: You raise me up太好听了</span></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/clb/clb_62.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/aew/aew_64.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/ahw/ahw_63.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/chanxian/chanxian_60.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/mg/mg_62.wav" type="audio/wav"></audio></td>
-          </tr>
-        </tbody>
-      </table>
+  <!-- <div><br/>All of the below phrases are unseen by Tacotron during training. <a href="../../index.html">Click here for more from the Tacotron team.</a></div> -->
 
-      <h3>Fictitious Speakers</h3>
-      <table>
-        <tbody>
-          <tr>
-            <td colspan="3"><span><b>Random speaker embeddings, this is just to check the robustness of the model.</b></span></td>
-          </tr>
-          <tr>
-            <td><span>0: There was a change now.</span></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/fri/clb_53.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td><span>1: 让您对保险更加了解</span></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/fri/fri_42.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td><span>2: You raise me up太好听了</span></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/fri/fri_62.wav" type="audio/wav"></audio></td>
-          </tr>
-        </tbody>
-      </table>
-  </body>
+  <div>
+    <h3>Seen Speakers</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>VCTK p225(English, Female)</th>
+          <th>VCTK p226(English, Male)</th>
+          <th>ST P00001I(Chinese, Female)</th>
+          <th>ST P00001A(Chinese, Male)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="4"><span><b>Reference:</b></td></span>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/raw_audio/p225/p225_355.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw_audio/p226/p226_360.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw_audio/P00001I/P00001I_0110.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw_audio/P00001A/P00001A_0116.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td colspan="4"><span><b>Synthesized:</b></span></td>
+        </tr>
+        <tr>
+          <td><span>0: There was nothing on the rock.</span></td>
+          <td><span>0: The boat was fantanstic.</span></td>
+          <td><span>0: Anyway, no one saw her like that.</span></td>
+          <td><span>0: I was the only one who remained sitting.</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/p225/p225_57.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/p226/p226_39.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/P00001I/P00001I_59.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/P00001A/P00001A_56.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><span>1: 今日第一次去网吧玩英雄联盟</span></td>
+          <td><span>1: 形容火烧云形状的词语</span></td>
+          <td><span>1: 你辞职了再去银行可以吗</span></td>
+          <td><span>1: 我就怕辞职了去不了云南</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/p225/p225_5.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/p226/p226_63.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/P00001I/P00001I_8.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/P00001A/P00001A_60.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><span>2: 我喜欢China.</span></td>
+          <td><span>2: Let me see这太美了</span></td>
+          <td><span>2: You raise me up太好听了</span></td>
+          <td><span>2: 我喜欢China.</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/p225/p225_60.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/p226/p260_00027.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/P00001I/P00001I_62.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/P00001A/P00001A_60.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Unseen Speakers</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>CMU clb(English, Female)</th>
+          <th>CMU aew(English, Male)</th>
+          <th>CMU ahw(English, Male)</th>
+          <th>internal Chanxian(Chinese, Female)</th>
+          <th>internal Male-golden(Chinese, Male)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="5"><span><b>Reference:</b></td></span>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/raw_audio/clb/clb_b0484.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw_audio/aew/aew_b0454.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw_audio/ahw/ahw_a0552.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw_audio/chanxian/chanxian_001853.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw_audio/mg/mg_001804.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td colspan="5"><span><b>Synthesized:</b></span></td>
+        </tr>
+        <tr>
+          <td><span>0: I came for information more out of curiosity than anything else.</span></td>
+          <td><span>0: She turned in at the hotel.</span></td>
+          <td><span>0: By is the town of a mess.</span></td>
+          <td><span>0: I was the only one who remained sitting.</span></td>
+          <td><span>0: The boat was fantanstic.</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/clb/clb_58.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/aew/aew_55.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/ahw/ahw_56.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/chanxian/chanxian_25.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/mg/mg_39.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><span>1: 死亡人数均与去年同期持平</span></td>
+          <td><span>1: 你辞职了再去银行可以吗</span></td>
+          <td><span>1: 我抑制不住内心的激动和感慨</span></td>
+          <td><span>1: 黄龙的雪好大啊</span></td>
+          <td><span>1: 我倒是不怀念读书的日子</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/clb/clb_18.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/aew/aew_8.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/ahw/ahw_49.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/chanxian/chanxian_6.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/mg/mg_4.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><span>2: You raise me up太好听了</span></td>
+          <td><span>2: 你真的是一个talent.</span></td>
+          <td><span>2: Let me see这太美了</span></td>
+          <td><span>2: 我喜欢China.</span></td>
+          <td><span>2: You raise me up太好听了</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/clb/clb_62.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/aew/aew_64.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/ahw/ahw_63.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/chanxian/chanxian_60.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/mg/mg_62.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Fictitious Speakers</h3>
+    <table>
+      <tbody>
+        <tr>
+          <td colspan="3"><span><b>Random speaker embeddings, this is just to check the robustness of the
+                model.</b></span></td>
+        </tr>
+        <tr>
+          <td><span>0: There was a change now.</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/fri/clb_53.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><span>1: 让您对保险更加了解</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/fri/fri_42.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><span>2: You raise me up太好听了</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/fri/fri_62.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+
 </html>

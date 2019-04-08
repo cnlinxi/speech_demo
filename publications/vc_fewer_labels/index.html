@@ -1,159 +1,219 @@
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Audio samples of "Voice Conversion with Fewer Labels by Conditional Generative Adversarial Networks"</title>
-    <link rel="stylesheet" type="text/css" href="../../stylesheet.css"/>
-    <!-- <link rel="shortcut icon" href="../../images/taco.png"> -->
-  </head>
-  <body>
-    <article>
-      <header>
-        <h1>Audio samples of "Voice Conversion with Fewer Labels by Conditional Generative Adversarial Networks"</h1>
-      </header>
-    </article>
 
-    <!-- <div><b>Paper:</b> <a href="https://arxiv.org/abs/1703.10135">arXiv</a> <a href="http://www.interspeech2017.org/program/technical-program/">Interspeech 2017</a></div> -->
-    <!-- <div><b>Authors:</b> Yuxuan Wang, RJ Skerry-Ryan, Daisy Stanton, Yonghui Wu, Ron J. Weiss, Navdeep Jaitly, Zongheng Yang, Ying Xiao, Zhifeng Chen, Samy Bengio, Quoc Le, Yannis Agiomyrgiannakis, Rob Clark, Rif A. Saurous</div> -->
-    <div><b>Abstract:</b>   Recent studies have shown remarkable success in voice conversion (VC) based on 
-        generative adversarial networks (GANs) without parallel data. 
-        This paper proposes a semi-supervised method based on 
-        conditional generative adversarial network (CGAN) which allows 
-        non-parallel many-to-many voice conversion with fewer labeled data. 
-        In the proposed method, the discriminator of GAN not only 
-        learns to distinguish real/fake samples, but also learns to classify samples. 
-        The discriminator is used to predict labels for the unlabeled real samples which reduces the reliance on labeled data. 
-        By following the approach, we only need to provide speech with a small part of labeled data, 
-        which enable a single generation network to implement many-to-many mapping between 
-        different voice domains and generate realistic audio as quickly as real time. 
-        In particular, the proposed approach is able to achieve comparable voice quality and speaker similarity 
-        with other methods by using only 10% of the labeled data.</div>
+<head>
+  <meta charset="UTF-8">
+  <title>Audio samples of "Voice Conversion with Fewer Labels by Conditional Generative Adversarial Networks"</title>
+  <link rel="stylesheet" type="text/css" href="../../stylesheet.css" />
+  <!-- <link rel="shortcut icon" href="../../images/taco.png"> -->
+</head>
 
-    <!-- <div><br/>All of the below phrases are unseen by Tacotron during training. <a href="../../index.html">Click here for more from the Tacotron team.</a></div> -->
+<body>
+  <article>
+    <header>
+      <h1>Audio samples of "Voice Conversion with Fewer Labels by Conditional Generative Adversarial Networks"</h1>
+    </header>
+  </article>
 
-    <div>
-      <h3>The original/target speaker audio</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>VCTK p248(India Female)</th><th>VCTK p262(Edinburgh, Female)</th><th>VCTK p272(Edinburgh, Male)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colspan="3"><span><b>orignal/target audio:</b></td></span>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/raw/p248/cpsyn-p248_178.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/raw/p262/cpsyn-p262_129.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/raw/p272/cpsyn-p272_183.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/raw/p248/cpsyn-p248_195.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/raw/p262/cpsyn-p262_149.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/raw/p272/cpsyn-p262_196.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/raw/p248/cpsyn-p248_227.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/raw/p262/cpsyn-p262_166.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/raw/p262/cpsyn-p262_199.wav" type="audio/wav"></audio></td>
-          </tr>
-        </tbody>
-      </table>
+  <!-- <div><b>Paper:</b> <a href="https://arxiv.org/abs/1703.10135">arXiv</a> <a href="http://www.interspeech2017.org/program/technical-program/">Interspeech 2017</a></div> -->
+  <!-- <div><b>Authors:</b> Yuxuan Wang, RJ Skerry-Ryan, Daisy Stanton, Yonghui Wu, Ron J. Weiss, Navdeep Jaitly, Zongheng Yang, Ying Xiao, Zhifeng Chen, Samy Bengio, Quoc Le, Yannis Agiomyrgiannakis, Rob Clark, Rif A. Saurous</div> -->
+  <div><b>Abstract:</b> Recent studies have shown remarkable success in voice conversion (VC) based on
+    generative adversarial networks (GANs) without parallel data.
+    This paper proposes a semi-supervised method based on
+    conditional generative adversarial network (CGAN) which allows
+    non-parallel many-to-many voice conversion with fewer labeled data.
+    In the proposed method, the discriminator of GAN not only
+    learns to distinguish real/fake samples, but also learns to classify samples.
+    The discriminator is used to predict labels for the unlabeled real samples which reduces the reliance on labeled
+    data.
+    By following the approach, we only need to provide speech with a small part of labeled data,
+    which enable a single generation network to implement many-to-many mapping between
+    different voice domains and generate realistic audio as quickly as real time.
+    In particular, the proposed approach is able to achieve comparable voice quality and speaker similarity
+    with other methods by using only 10% of the labeled data.</div>
 
-      <h3>StarGAN-VC(baseline)</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>p248-to-p262(intra-gender)</th><th>p262-to-p248(intra-gender)</th><th>p262-to-p272(inter-gender)</th><th>p272-to-p262(inter-gender)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colspan="4"><span><b>VC synthesized:</b></span></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/baseline/p248_to_p262/p248_028-vcto-p262.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/baseline/p262_to_p248/p262_056-vcto-p248.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/baseline/p262_to_p272/p262_128-vcto-p272.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/baseline/p272_to_p262/p272_093-vcto-p262.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/baseline/p248_to_p262/p248_139-vcto-p262.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/baseline/p262_to_p248/p262_179-vcto-p248.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/baseline/p262_to_p272/p262_166-vcto-p272.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/baseline/p272_to_p262/p272_158-vcto-p262.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/baseline/p248_to_p262/p248_196-vcto-p262.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/baseline/p262_to_p248/p262_188-vcto-p248.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/baseline/p262_to_p272/p262_169-vcto-p272.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/baseline/p272_to_p262/p272_183-vcto-p262.wav" type="audio/wav"></audio></td>
-          </tr>
-        </tbody>
-      </table>
+  <!-- <div><br/>All of the below phrases are unseen by Tacotron during training. <a href="../../index.html">Click here for more from the Tacotron team.</a></div> -->
 
-      <h3>Proposed method with 10% labeled data</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>p248-to-p262(intra-gender)</th><th>p262-to-p248(intra-gender)</th><th>p262-to-p272(inter-gender)</th><th>p272-to-p262(inter-gender)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colspan="4"><span><b>VC synthesized:</b></span></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/proposed/p248_to_p262/p248_195-vcto-p262.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed/p262_to_p248/p262_046-vcto-p248.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed/p262_to_p272/p262_056-vcto-p272.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed/p272_to_p262/p272_093-vcto-p262.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/proposed/p248_to_p262/p248_210-vcto-p262.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed/p262_to_p248/p262_118-vcto-p248.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed/p262_to_p272/p262_090-vcto-p272.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed/p272_to_p262/p272_144-vcto-p262.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/proposed/p248_to_p262/p248_227-vcto-p262.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed/p262_to_p248/p262_188-vcto-p248.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed/p262_to_p272/p262_149-vcto-p272.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed/p272_to_p262/p272_183-vcto-p262.wav" type="audio/wav"></audio></td>
-          </tr>
-        </tbody>
-      </table>
-      
-      <h3>Proposed method with 5% labeled data</h3>
-      <table>
-        <thead>
-          <tr>
-            <th>p248-to-p262(intra-gender)</th><th>p262-to-p248(intra-gender)</th><th>p262-to-p272(inter-gender)</th><th>p272-to-p262(inter-gender)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colspan="4"><span><b>VC synthesized:</b></span></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/proposed2/p248_to_p262/p248_056-vcto-p262.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed2/p262_to_p248/p262_072-vcto-p248.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed2/p262_to_p272/p262_056-vcto-p272.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed2/p272_to_p262/p272_089-vcto-p262.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/proposed2/p248_to_p262/p248_195-vcto-p262.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed2/p262_to_p248/p262_086-vcto-p248.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed2/p262_to_p272/p262_072-vcto-p272.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed2/p272_to_p262/p272_129-vcto-p262.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/proposed2/p248_to_p262/p248_227-vcto-p262.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed2/p262_to_p248/p262_133-vcto-p248.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed2/p262_to_p272/p262_133-vcto-p272.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed2/p272_to_p262/p272_199-vcto-p262.wav" type="audio/wav"></audio></td>
-          </tr>
-        </tbody>
-      </table>
-  </body>
+  <div>
+    <h3>The original/target speaker audio</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>VCTK p248(India Female)</th>
+          <th>VCTK p262(Edinburgh, Female)</th>
+          <th>VCTK p272(Edinburgh, Male)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="3"><span><b>orignal/target audio:</b></td></span>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/raw/p248/cpsyn-p248_178.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw/p262/cpsyn-p262_129.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw/p272/cpsyn-p272_183.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/raw/p248/cpsyn-p248_195.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw/p262/cpsyn-p262_149.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw/p272/cpsyn-p262_196.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/raw/p248/cpsyn-p248_227.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw/p262/cpsyn-p262_166.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw/p262/cpsyn-p262_199.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>StarGAN-VC(baseline)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>p248-to-p262(intra-gender)</th>
+          <th>p262-to-p248(intra-gender)</th>
+          <th>p262-to-p272(inter-gender)</th>
+          <th>p272-to-p262(inter-gender)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="4"><span><b>VC synthesized:</b></span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/baseline/p248_to_p262/p248_028-vcto-p262.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/baseline/p262_to_p248/p262_056-vcto-p248.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/baseline/p262_to_p272/p262_128-vcto-p272.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/baseline/p272_to_p262/p272_093-vcto-p262.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/baseline/p248_to_p262/p248_139-vcto-p262.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/baseline/p262_to_p248/p262_179-vcto-p248.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/baseline/p262_to_p272/p262_166-vcto-p272.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/baseline/p272_to_p262/p272_158-vcto-p262.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/baseline/p248_to_p262/p248_196-vcto-p262.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/baseline/p262_to_p248/p262_188-vcto-p248.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/baseline/p262_to_p272/p262_169-vcto-p272.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/baseline/p272_to_p262/p272_183-vcto-p262.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Proposed method with 10% labeled data</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>p248-to-p262(intra-gender)</th>
+          <th>p262-to-p248(intra-gender)</th>
+          <th>p262-to-p272(inter-gender)</th>
+          <th>p272-to-p262(inter-gender)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="4"><span><b>VC synthesized:</b></span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/proposed/p248_to_p262/p248_195-vcto-p262.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/p262_to_p248/p262_046-vcto-p248.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/p262_to_p272/p262_056-vcto-p272.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/p272_to_p262/p272_093-vcto-p262.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/proposed/p248_to_p262/p248_210-vcto-p262.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/p262_to_p248/p262_118-vcto-p248.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/p262_to_p272/p262_090-vcto-p272.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/p272_to_p262/p272_144-vcto-p262.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/proposed/p248_to_p262/p248_227-vcto-p262.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/p262_to_p248/p262_188-vcto-p248.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/p262_to_p272/p262_149-vcto-p272.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/p272_to_p262/p272_183-vcto-p262.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Proposed method with 5% labeled data</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>p248-to-p262(intra-gender)</th>
+          <th>p262-to-p248(intra-gender)</th>
+          <th>p262-to-p272(inter-gender)</th>
+          <th>p272-to-p262(inter-gender)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="4"><span><b>VC synthesized:</b></span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/proposed2/p248_to_p262/p248_056-vcto-p262.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed2/p262_to_p248/p262_072-vcto-p248.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed2/p262_to_p272/p262_056-vcto-p272.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed2/p272_to_p262/p272_089-vcto-p262.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/proposed2/p248_to_p262/p248_195-vcto-p262.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed2/p262_to_p248/p262_086-vcto-p248.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed2/p262_to_p272/p262_072-vcto-p272.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed2/p272_to_p262/p272_129-vcto-p262.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/proposed2/p248_to_p262/p248_227-vcto-p262.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed2/p262_to_p248/p262_133-vcto-p248.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed2/p262_to_p272/p262_133-vcto-p272.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed2/p272_to_p262/p272_199-vcto-p262.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+
 </html>
