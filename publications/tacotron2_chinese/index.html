@@ -1,0 +1,225 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Audio samples of "Chinese Text-To-Speech(TTS) based on Tacotron-2"</title>
+  <link rel="stylesheet" type="text/css" href="../../stylesheet.css" />
+</head>
+
+<body>
+  <article>
+    <header>
+      <h1>Audio samples of "Chinese Text-To-Speech(TTS) based on Tacotron-2"</h1>
+    </header>
+  </article>
+
+  <div><b>Abstract:</b> Neural network-based model for text-to-speech (TTS) synthesis has made significant progress in
+    recent years.
+    In this paper, we present a cross-lingual, multi-speaker neural end-to-end TTS framework
+    which can model speaker characteristics and synthesize speech in different languages.
+    We implement the model by introducing a separately trained neural speaker embedding network,
+    which can represent the latent structure of different speakers and language pronunciations.
+    We train the speech synthesis network bilingually and prove the possibility of
+    synthesizing Chinese speaker's English speech and vice versa. We explore different methods
+    to fit a new speaker using only a few speech samples. The experimental results show that,
+    with only several minutes of audio from a new speaker, the proposed model can synthesize speech bilingually
+    and acquire decent naturalness and similarity for both languages.</div>
+
+  <div>
+    <h3>Chinese speech</h3>
+    <table>
+      <thead>
+        <tr>
+            <td colspan="4"><span><b>Real speech:</b></td></span>
+        </tr>
+        <tr>
+          <th>卡尔普陪外孙玩滑梯。</th>
+          <th>假语村言别再拥抱我。</th>
+          <th>宝马配挂跛骡鞍，貂蝉怨枕董翁榻。</th>
+          <th>邓小平与撒切尔会晤。</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/biaobei/raw_audio/biaobei_000001.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/biaobei/raw_audio/biaobei_000002.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/biaobei/raw_audio/biaobei_000003.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/biaobei/raw_audio/biaobei_000004.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td colspan="4"><span><b>Synthesized:</b></span></td>
+        </tr>
+        <tr>
+          <td><span>0: 这是一条测试语句。</span></td>
+          <td><span>1: 我希望能够合成流畅的语音。</span></td>
+          <td><span>2: 语音合成是利用电子计算机和一些专门装置模拟人，制造语音的技术。</span></td>
+          <td><span>3: 华东师范大学，简称华东师大，位于中国上海，由中华人民共和国教育部直属。</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/biaobei/synthesized/wav-batch_0_sentence_0-linear.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/biaobei/synthesized/wav-batch_1_sentence_0-linear.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/biaobei/synthesized/wav-batch_2_sentence_0-linear.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/biaobei/synthesized/wav-batch_3_sentence_0-linear.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><span>4: 我希望能够在陈老师的指导下，帮助陈同学完成毕业论文。</span></td>
+          <td><span>5: 八百标兵奔北坡，炮兵并排北边跑，炮兵怕把标兵碰，标兵怕碰炮兵跑。</span></td>
+          <td><span>6: 老龙恼怒闹老农，老农恼怒闹老龙。农怒龙恼农更怒，龙恼农怒龙怕农。</span></td>
+          <td><span>7: 春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/biaobei/synthesized/wav-batch_4_sentence_0-linear.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/biaobei/synthesized/wav-batch_5_sentence_0-linear.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/biaobei/synthesized/wav-batch_6_sentence_0-linear.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/biaobei/synthesized/wav-batch_7_sentence_0-linear.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td colspan="2"><span>8: 寻寻觅觅，冷冷清清，凄凄惨惨戚戚。乍暖还寒时候，最难将息。三杯两盏淡酒，怎敌他、晚来风急！雁过也，正伤心，却是旧时相识。满地黄花堆积，憔悴损，如今有谁堪摘？守着窗儿，独自怎生得黑！梧桐更兼细雨，到黄昏、点点滴滴。这次第，怎一个愁字了得！</span></td>
+          <td colspan="2"><span>9: 我是一种端到端带注意力机制的，序列到序列的生成模型，该模型包括一个编码器、一个基于注意力的解码器以及一个后端处理网络。梅尔生成网络输入字符，输出原始谱图，然后声码器把这个声谱图转换成波形图。该模型将字符序列输入编码器，编码器将提取出文本的顺序表示，每个字符被表示为一个独热向量嵌入到连续向量中。然后加入非线性变换，再然后加上一个随机丢弃，以减少过度拟合。这在本质上减少了单词的发音错误。模型所用的解码器是基于内容注意力的解码器，然后使用声码器生成最终的波形图。</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/biaobei/synthesized/wav-batch_8_sentence_0-linear.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/biaobei/synthesized/wav-batch_9_sentence_0-linear.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Fine-tunning with THCHS-30(A11)</h3>
+    <table>
+      <thead>
+        <tr>
+            <td colspan="4"><span><b>Real speech:</b></td></span>
+        </tr>
+        <tr>
+          <th>绿是阳春烟景大块文章的底色四月的林峦更是绿得鲜活秀媚诗意盎然。</th>
+          <th>企业依靠技术挖潜增效，他负责全厂产品质量与技术培训，成了厂里的大忙人。</th>
+          <th>菜做好了，一碗清蒸武昌鱼一碗蕃茄炒鸡蛋一碗榨菜干子炒肉丝。</th>
+          <th>她看看夜己很深，白天的炎热已给夜凉吹散，吩咐大家各自安息明天继续玩乐。</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="4"><span><b>Reference:</b></td></span>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/raw_audio/clb/clb_b0484.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw_audio/aew/aew_b0454.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw_audio/ahw/ahw_a0552.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw_audio/chanxian/chanxian_001853.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw_audio/mg/mg_001804.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td colspan="5"><span><b>Synthesized:</b></span></td>
+        </tr>
+        <tr>
+          <td><span>0: I came for information more out of curiosity than anything else.</span></td>
+          <td><span>0: She turned in at the hotel.</span></td>
+          <td><span>0: I was the only one who remained sitting.</span></td>
+          <td><span>0: Boy is the town a mess.</span></td>
+          <td><span>0: The boat was fantanstic.</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/clb/clb_58.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/aew/aew_55.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/ahw/ahw_56.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/chanxian/chanxian_25.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/mg/mg_39.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><span>1: 死亡人数均与去年同期持平</span></td>
+          <td><span>1: 你辞职了再去银行可以吗</span></td>
+          <td><span>1: 我抑制不住内心的激动和感慨</span></td>
+          <td><span>1: 黄龙的雪好大啊</span></td>
+          <td><span>1: 我倒是不怀念读书的日子</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/clb/clb_18.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/aew/aew_8.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/ahw/ahw_49.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/chanxian/chanxian_6.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/mg/mg_4.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><span>2: You raise me up太好听了</span></td>
+          <td><span>2: 你真的是一个talent.</span></td>
+          <td><span>2: Let me see这太美了</span></td>
+          <td><span>2: 我喜欢China.</span></td>
+          <td><span>2: You raise me up太好听了</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/clb/clb_62.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/aew/aew_64.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/ahw/ahw_63.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/chanxian/chanxian_60.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/mg/mg_62.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Fictitious Speakers</h3>
+    <table>
+      <tbody>
+        <tr>
+          <td colspan="3"><span><b>Random speaker embeddings, this is just to check the robustness of the
+                model.</b></span></td>
+        </tr>
+        <tr>
+          <td><span>0: There was a change now.</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/fri/fri_53.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><span>1: 让您对保险更加了解</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/fri/fri_42.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><span>2: You raise me up太好听了</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/fri/fri_62.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+
+</html>
