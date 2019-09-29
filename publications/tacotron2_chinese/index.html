@@ -13,17 +13,17 @@
     </header>
   </article>
 
-  <div><b>Abstract:</b> Neural network-based model for text-to-speech (TTS) synthesis has made significant progress in
-    recent years.
-    In this paper, we present a cross-lingual, multi-speaker neural end-to-end TTS framework
-    which can model speaker characteristics and synthesize speech in different languages.
-    We implement the model by introducing a separately trained neural speaker embedding network,
-    which can represent the latent structure of different speakers and language pronunciations.
-    We train the speech synthesis network bilingually and prove the possibility of
-    synthesizing Chinese speaker's English speech and vice versa. We explore different methods
-    to fit a new speaker using only a few speech samples. The experimental results show that,
-    with only several minutes of audio from a new speaker, the proposed model can synthesize speech bilingually
-    and acquire decent naturalness and similarity for both languages.</div>
+  <div><b>Abstract:</b> The disruptively designed end-to-end speech synthesis system Tacotron2 is currently only available in English. 
+    This paper is devoted to the multi-directional improvement of Tacotron2, 
+    and designs a Chinese speech synthesis scheme, which mainly includes: 
+    adding pre-processing modules to convert Chinese into phonetic characters for the problems of Chinese characters, 
+    such as non-sound, transposition and multi-tone; In the case of insufficient Chinese training corpus, 
+    the pre-training decoder is used to obtain better sound quality in less corpus; for the Chinese speech synthesis rapid pause problem, 
+    the cross entropy loss is weighted, and the multi-layer perceptron is used instead of the linear transformation pair. 
+    The strategy of stopping the predictor has been effectively improved; 
+    in addition, the Chinese speech synthesis quality has been further improved by adding a multi-attention mechanism. 
+    The experimental comparison of the Mel spectrum and the Mel cepstrum distance shows that our work is effective and 
+    can make Tacotron2 better adapt to the requirements of Chinese speech synthesis.</div>
 
   <div>
     <h3>Chinese speech</h3>
