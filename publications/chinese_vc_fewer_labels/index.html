@@ -1,0 +1,126 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chinese Audio samples of "Voice Conversion with Fewer Labels by Conditional Generative Adversarial Networks"</title>
+  <link rel="stylesheet" type="text/css" href="../../stylesheet.css" />
+  <!-- <link rel="shortcut icon" href="../../images/taco.png"> -->
+</head>
+
+<body>
+  <article>
+    <header>
+      <h1>Chinese Audio samples of "Voice Conversion with Fewer Labels by Conditional Generative Adversarial Networks"</h1>
+    </header>
+  </article>
+
+  <!-- <div><b>Paper:</b> <a href="https://arxiv.org/abs/1703.10135">arXiv</a> <a href="http://www.interspeech2017.org/program/technical-program/">Interspeech 2017</a></div> -->
+  <!-- <div><b>Authors:</b> Yuxuan Wang, RJ Skerry-Ryan, Daisy Stanton, Yonghui Wu, Ron J. Weiss, Navdeep Jaitly, Zongheng Yang, Ying Xiao, Zhifeng Chen, Samy Bengio, Quoc Le, Yannis Agiomyrgiannakis, Rob Clark, Rif A. Saurous</div> -->
+  <div><b>Abstract:</b> Recent studies have shown remarkable success in voice conversion (VC) based on
+    generative adversarial networks (GANs) without parallel data.
+    This paper proposes a semi-supervised method based on
+    conditional generative adversarial network (CGAN) which allows
+    non-parallel many-to-many voice conversion with fewer labeled data.
+    In the proposed method, the discriminator of GAN not only
+    learns to distinguish real/fake samples, but also learns to classify samples.
+    The discriminator is used to predict labels for the unlabeled real samples which reduces the reliance on labeled
+    data.
+    By following the approach, we only need to provide speech with a small part of labeled data,
+    which enable a single generation network to implement many-to-many mapping between
+    different voice domains and generate realistic audio as quickly as real time.
+    In particular, the proposed approach is able to achieve comparable voice quality and speaker similarity
+    with other methods by using only 10% of the labeled data.</div>
+
+  <!-- <div><br/>All of the below phrases are unseen by Tacotron during training. <a href="../../index.html">Click here for more from the Tacotron team.</a></div> -->
+
+  <div>
+    <h3>The original/target speaker audio</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Biaobei Female</th>
+          <th>THCHS-30 A8</th>
+          <th>THCHS-30 A11</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="3"><span><b>orignal/target audio:</b></td></span>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/raw/biaobei/cpsyn-thchs30_D8_000002_1.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw/A8/cpsyn-thchs30_A8_0_1.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw/A11/cpsyn-thchs30_A11_12_1.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/raw/biaobei/cpsyn-thchs30_D8_000053_1.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw/A8/cpsyn-thchs30_A8_111_1.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw/A11/cpsyn-thchs30_A11_107_1.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/raw/biaobei/cpsyn-thchs30_D8_000055_1.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw/A8/cpsyn-thchs30_A8_117_1.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/raw/A11/cpsyn-thchs30_A11_114_1.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Proposed method with 10% labeled data</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Biaobei-to-A11(intra-gender)</th>
+          <th>A11-to-Biaobei(intra-gender)</th>
+          <th>Biaobei-to-A8(inter-gender)</th>
+          <th>A8-to-Biaobei(inter-gender)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="4"><span><b>VC synthesized:</b></span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/proposed/vc_D8_to_A11/thchs30_D8_000002_1-vcto-A11.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/vc_A11_to_D8/thchs30_A11_12_1-vcto-D8.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/vc_D8_to_A8/thchs30_D8_000002_1-vcto-A8.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/vc_A8_to_D8/thchs30_A8_0_1-vcto-D8.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/proposed/vc_D8_to_A11/thchs30_D8_000053_1-vcto-A11.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/vc_A11_to_D8/thchs30_A11_107_1-vcto-D8.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/vc_D8_to_A8/thchs30_D8_000053_1-vcto-A8.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/vc_A8_to_D8/thchs30_A8_111_1-vcto-D8.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="demos/proposed/vc_D8_to_A11/thchs30_D8_000055_1-vcto-A11.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/vc_A11_to_D8/thchs30_A11_114_1-vcto-D8.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/vc_D8_to_A8/thchs30_D8_000055_1-vcto-A8.wav" type="audio/wav"></audio></td>
+          <td><audio controls="">
+              <source src="demos/proposed/vc_A8_to_D8/thchs30_A8_117_1-vcto-D8.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+</body>
+
+</html>
